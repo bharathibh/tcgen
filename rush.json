@@ -1,0 +1,92 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+
+
+  "rushVersion": "5.124.7",
+
+  "pnpmVersion": "7.33.5",
+
+  "nodeSupportedVersionRange": ">=22.2.0",
+
+  "projectFolderMinDepth": 1,
+
+  "projectFolderMaxDepth": 10,
+
+  "allowMostlyStandardPackageNames": true,
+
+  "gitPolicy": {
+   
+    "allowedEmailRegExps": [
+      "[^@]+@users\\.noreply\\.github\\.com",
+      "rush-bot@example\\.org"
+    ],
+    "sampleEmail": "example@users.noreply.github.com"
+    
+  },
+
+  "repository": {
+   
+    // "url": "https://github.com/microsoft/rush-example",
+    // "defaultBranch": "main",
+    // "defaultRemote": "origin"
+    
+  },
+
+  /**
+   * Event hooks are customized script actions that Rush executes when specific events occur
+   */
+  "eventHooks": {
+    /**
+     * A list of shell commands to run before "rush install" or "rush update" starts installation
+     */
+    "preRushInstall": [
+      // "common/scripts/pre-rush-install.js"
+    ],
+
+    /**
+     * A list of shell commands to run after "rush install" or "rush update" finishes installation
+     */
+    "postRushInstall": [],
+
+    /**
+     * A list of shell commands to run before "rush build" or "rush rebuild" starts building
+     */
+    "preRushBuild": [],
+
+    /**
+     * A list of shell commands to run after "rush build" or "rush rebuild" finishes building
+     */
+    "postRushBuild": [],
+
+    /**
+     * A list of shell commands to run before the "rushx" command starts
+     */
+    "preRushx": [],
+
+    /**
+     * A list of shell commands to run after the "rushx" command finishes
+     */
+    "postRushx": []
+  },
+
+  
+  // "allowedProjectTags": [ "backend", "frontend", "1.0.0-release" ],
+
+  
+  "projects": [
+    
+    {
+      "packageName": "app-ui",
+      "projectFolder": "app-ui",
+      // "reviewCategory": "production",
+      // "tags": [ "frontend-team" ]
+    }
+    
+    // {
+    //   "packageName": "my-toolchain",
+    //   "projectFolder": "tools/my-toolchain",
+    //   "reviewCategory": "tools",
+    //   "tags": [ "tools" ]
+    // }
+  ]
+}

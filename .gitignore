@@ -506,5 +506,7 @@ sketch
 ### TC GEN custom ###
 
 ## Rush JS Plugin
+
 common/temp/*
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,visualstudiocode,pycharm,node,react,python
